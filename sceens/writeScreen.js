@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView, ToastAndroid } from 'react-native';
 import db from "../config";
 
 export default class WriteScreen extends React.Component {
@@ -18,11 +18,12 @@ export default class WriteScreen extends React.Component {
             Story : this.state.story,
             Author : this.state.author,
         })
-        alert("Congratulations! You have written a story!");
+        ToastAndroid.show("Congratulations ! You have submitted your stroy !", ToastAndroid.SHORT);
     }
 
     render(){
         return(
+            <KeyboardAvoidingView behavior="padding" style={{flex:1}} >
             <View>
                 <TextInput style={styles.titleTextInput}
                     placeholder="Title your masterpiece"
@@ -55,6 +56,7 @@ export default class WriteScreen extends React.Component {
                     <Text style = {styles.submitText}>Submit</Text>
                 </TouchableOpacity>
             </View>
+            </KeyboardAvoidingView>
         )
     }
 
