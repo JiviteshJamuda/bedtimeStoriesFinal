@@ -18,7 +18,8 @@ export default class WriteScreen extends React.Component {
             Story : this.state.story,
             Author : this.state.author,
         })
-        ToastAndroid.show("Congratulations ! You have submitted your stroy !", ToastAndroid.SHORT);
+        //ToastAndroid.show("Congratulations ! You have submitted your stroy !", ToastAndroid.SHORT);
+        alert("Congratulations ! You have submitted your stroy !")
     }
 
     render(){
