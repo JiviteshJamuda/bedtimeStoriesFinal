@@ -4,14 +4,14 @@ require("@firebase/firestore")
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyByXUINAdhygJweBPnVVODvTG3SqQPZQ1I",
-    authDomain: "bedtimestories-e7907.firebaseapp.com",
-    databaseURL: "https://bedtimestories-e7907.firebaseio.com",
-    projectId: "bedtimestories-e7907",
-    storageBucket: "bedtimestories-e7907.appspot.com",
-    messagingSenderId: "737376342682",
-    appId: "1:737376342682:web:506672d87184eb6199c523",
-    measurementId: "G-KJCK7QK7D0"
+  apiKey: "AIzaSyAPN2TyV9ldFOotkO5tO4Y4cy_ZivZUwxs",
+  authDomain: "bedstories-4fda3.firebaseapp.com",
+  databaseURL: "https://bedstories-4fda3.firebaseio.com",
+  projectId: "bedstories-4fda3",
+  storageBucket: "bedstories-4fda3.appspot.com",
+  messagingSenderId: "985630966508",
+  appId: "1:985630966508:web:78072b5c4437ac15509bc9",
+  measurementId: "G-31FM8ZHZ59"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

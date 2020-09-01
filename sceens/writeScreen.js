@@ -53,7 +53,10 @@ export default class WriteScreen extends React.Component {
                         })
                     }}
                 />
-                <TouchableOpacity style = {styles.submit} onPress={this.submitStory}>
+                <TouchableOpacity style = {styles.submit} 
+                onPress={
+                    this.submitStory                   
+                }>
                     <Text style = {styles.submitText}>Submit</Text>
                 </TouchableOpacity>
             </View>
