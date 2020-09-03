@@ -24,7 +24,7 @@ export default class WriteScreen extends React.Component {
 
     render(){
         return(
-            <KeyboardAvoidingView behavior="padding" style={{flex:1}} >
+            <KeyboardAvoidingView behavior="padding" style={{flex:1, backgroundColor : "#F0E68C"}} > 
             <View>
                 <TextInput style={styles.titleTextInput}
                     placeholder="Title your masterpiece"
