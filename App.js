@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import Login from "./sceens/login";
+//import Login from "./sceens/login";
 import ReadScreen from "./sceens/readScreen";
 import WriteScreen from "./sceens/writeScreen";
 
@@ -47,13 +47,13 @@ const TabNavigator = createBottomTabNavigator({
 }
 );
 
-const SwitchNavigator = createSwitchNavigator(
-  {
-    LoginScreen : {screen : Login},
-    Home : {screen : TabNavigator}
-  },
-  {initialRouteName : "LoginScreen"}
-)
+// const SwitchNavigator = createSwitchNavigator(
+//   {
+//     LoginScreen : {screen : Login},
+//     Home : {screen : TabNavigator}
+//   },
+//   {initialRouteName : "LoginScreen"}
+// )
 
 const AppContainer =  createAppContainer(TabNavigator);
 const styles = StyleSheet.create({
